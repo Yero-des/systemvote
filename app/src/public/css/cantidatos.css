@@ -1,0 +1,22 @@
+:root {
+
+}
+
+.cantidatos {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+}
+
+.cantidato {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  gap: 3rem;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+}
