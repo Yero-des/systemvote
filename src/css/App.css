@@ -1,0 +1,61 @@
+:root {
+  --text-primary: #ffdfdf
+}
+
+html, body{
+  overflow-y: hidden;
+  height:100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.font {
+  position: relative;  
+  /* min-height: 89.6vh; */
+  color: var(--text-primary);
+  background-image: url(../img/foto3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+@keyframes cambiaImagen {
+  0% {
+    background-image: url(../img/foto1.jpg);
+  }
+  50% {
+    background-image: url(../img/foto2.jpg);
+  }
+  100% {
+    background-image: url(../img/foto3.jpg);
+  }
+}
+.content-font {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.gray-content-font {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000003d;
+  z-index: 998;
+}
+
+@media (max-width: 768px) {
+  .font {
+    top: 2rem !important;
+    right: 0% !important;
+  }
+}
